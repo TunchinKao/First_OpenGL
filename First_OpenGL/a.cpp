@@ -264,5 +264,6 @@ GLuint fragment_shader_create(const char ** shaderSource) {
 		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
 	}
+
 	return fragmentShader;
 }
